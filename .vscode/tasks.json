@@ -7,7 +7,7 @@
             "options": {
                 "cwd": "${workspaceRoot}/build"
             },
-            "command": "cmake ${workspaceRoot}",
+            "command": "cmake ..",
         },
         {
             "label": "make",
@@ -16,6 +16,8 @@
                 "cwd": "${workspaceRoot}/build"
             },
             "command": "make",
+            "dependsOn": ["cmake"]
+
         },
         {
             "label": "build",
